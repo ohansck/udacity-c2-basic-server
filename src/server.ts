@@ -109,7 +109,7 @@ import { Car, cars as cars_list } from './cars';
         cars.push({ make: make, type: type, model: model, cost: cost, id, })
         console.log(cars[id])
         return res.status(200)
-          .send(`New Car saved. Details below: ${JSON.stringify(cars[id])}`);
+          .send(`New Car saved. Details of car found below: ${JSON.stringify(cars[id])}`);
       } catch (error) {
         return res.status(400)
           .send(`Could not save new car`);
